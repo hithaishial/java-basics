@@ -2,39 +2,57 @@ package com.thinkworks.company.dto;
 
 public class Order {
 
-    private String product;
+    private Product[] products;
     private String orderId;
     private Customer customer;
     private int productCount;
 
-    Products[] products = new Products[3];
 
-    public Order(String product, String orderId, Customer customer, int productCount){
 
-        this.product = product;
+    public Order(Product[] products, String orderId, Customer customer, int productCount){
+
         this.orderId = orderId;
         this.customer = customer;
         this.productCount = productCount;
-
-        products[0] = new Products("facewash");
-        products[1] = new Products("shampoo");
-        products[2] = new Products("body wash");
-
+        this.products = products;
     }
 
-    public double calculateOrderValue(){
+    public Product[] getProducts() {
+        return products;
+    }
 
-        for(int count=0; count <= products.length; count++){
+    public String getOrderId() {
+        return orderId;
+    }
 
-            if(count == products.length) {
-                System.out.println("all orders placed");
-                System.out.println("order value is: " + products.length);
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public double calculateOrderValue() {
+
+//        for(int count=0; count <= products.length; count++){
+//
+//            if(count == products.length) {
+//                System.out.println("all orders placed");
+//                System.out.println("order value is: " + products.length);
+//            }
+//            else{
+//                System.out.println("order failed");
+//            }
+//        }
+        double totalPrice = 0;
+        if (products != null) {
+
+
+            for (Product product : products) {
+
+                totalPrice = totalPrice + product.getPrice();
             }
-            else{
-                System.out.println("order failed");
-            }
-        }
-        return products.length;
+
+        } else System.out.println("order failed");
+
+        return totalPrice;
     }
 
 
