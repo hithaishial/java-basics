@@ -33,8 +33,11 @@ public class InventoryService {
      }
      public void printOrderDetails(Order order){
 
-          System.out.println("name of the customer: "+ order.getCustomer());
-          System.out.println("product list: "+ order.getProducts());
+          System.out.println("name of the customer: "+ order.getCustomer().getName());
+          System.out.println("product list: ");
+          for (Product product: order.getProducts()){
+               System.out.println(product.getProductName());
+          }
           System.out.println("total price value: "+ order.calculateOrderValue());
      }
      public double calculateInventoryValue(Product[] products){
@@ -44,7 +47,7 @@ public class InventoryService {
 
                for(Product product: products ){
 
-                    value = value+ (product.getPrice() *product.getQuantity());
+                    value = value+ (product.getPrice() * product.getQuantity());
                }
           }
           else System.out.println("failed to calculate inventory value");
