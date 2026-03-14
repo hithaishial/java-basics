@@ -5,7 +5,7 @@ import com.thinkworks.company.dto.Customer;
 
 public class InventoryService {
 
-     static final String COMPANY_NAME = "Think works";
+     static final String COMPANY_NAME = "ThinkWorks";
 
      public void printProductDetails(Product product){
 
@@ -42,17 +42,17 @@ public class InventoryService {
      }
      public double calculateInventoryValue(Product[] products){
 
-          double value =0;
+          double totalInventoryValue =0;
           if(products != null){
 
                for(Product product: products ){
 
-                    value = value+ (product.getPrice() * product.getQuantity());
+                    totalInventoryValue = totalInventoryValue + (product.getPrice() * product.getQuantity());
                }
           }
           else System.out.println("failed to calculate inventory value");
 
-          return value;
+          return totalInventoryValue;
      }
      public void findLowStockProducts(Product[] products){
 
