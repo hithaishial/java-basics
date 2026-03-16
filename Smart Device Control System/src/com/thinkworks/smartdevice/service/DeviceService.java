@@ -3,29 +3,38 @@ import com.thinkworks.smartdevice.dto.SmartDevice;
 
 public class DeviceService {
 
-    public void printDeviceDetails(SmartDevice device){
-
-        SmartDevice smartDevice = new SmartDevice("7384yh", "phone");
-        System.out.println("Device ID: " + smartDevice.getDeviceId());
-        System.out.println("Device Name: " + smartDevice.getDeviceName());
-    }
-    public void printControllerDetails(SmartDevice.Controller controller ){
-
-        SmartDevice.Controller control = new SmartDevice.Controller("App");
-        System.out.println(control.controlAction());
-    }
-    public void printSensorDetails(SmartDevice.Sensor sensor ){
-
-        SmartDevice smartDevice = new SmartDevice("7384yh", "phone");
-        SmartDevice.Sensor sensor1 = smartDevice.new Sensor("22874ju", "Light", 4567.88);
-        sensor1.getSensorId();
-        sensor1.getSensorType();
-        sensor1.getValue();
-    }
-    public void runDiagnostics(SmartDevice device){
-
-        SmartDevice device = new SmartDevice("7384yh", "phone");
-
+    public void printDeviceDetails(SmartDevice device) {
+        if(device!= null) {
+            System.out.println("Device ID: " + device.getDeviceId());
+            System.out.println("Device Name: " + device.getDeviceName());
+        }
+        else System.out.println("value is null");
+        System.out.println(" ");
     }
 
+    public void printControllerDetails(SmartDevice.Controller controller) {
+        if (controller != null) {
+            controller.controlAction();
+        }
+        else System.out.println("value is null");
+        System.out.println(" ");
+    }
+
+    public void printSensorDetails(SmartDevice.Sensor sensor) {
+        if (sensor != null) {
+            System.out.println("Sensor ID: " + sensor.getSensorId());
+            System.out.println("Sensor Type: " + sensor.getSensorType());
+            System.out.println("Sensor Value: " + sensor.getValue());
+        }
+        else System.out.println("value is null");
+        System.out.println(" ");
+    }
+
+    public void runDeviceDiagnostics(SmartDevice device) {
+        if(device != null) {
+            device.runDiagnostics();
+        }
+        else System.out.println("value is null");
+        System.out.println(" ");
+    }
 }
