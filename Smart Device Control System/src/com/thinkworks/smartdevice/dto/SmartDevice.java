@@ -32,7 +32,9 @@ public class SmartDevice {
         String controllerId;
         String type;
 
-        public Controller(String type){
+        public Controller(String type, String controllerId){
+
+            this.controllerId = controllerId;
             this.type= type;
         }
         public void controlAction(){
