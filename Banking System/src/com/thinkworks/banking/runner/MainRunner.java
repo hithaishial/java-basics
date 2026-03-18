@@ -23,9 +23,11 @@ public class MainRunner {
         System.out.println(" ");
         service.printAccountDetails(acc2);
         System.out.println(" ");
-        service.printTransactionDetails();
+        service.calculateFinalBalance(acc, transaction);
         System.out.println(" ");
-        service.printTransactionDetails();
+        service.calculateFinalBalance(acc1, transaction1);
+        System.out.println(" ");
+        service.calculateFinalBalance(acc2, transaction);
 
     }
 }

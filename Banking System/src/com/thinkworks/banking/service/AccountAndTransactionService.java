@@ -19,8 +19,8 @@ public class AccountAndTransactionService {
 
             System.out.println("Transaction ID: " + transaction.getTransactionId());
             System.out.println("Transaction type is debit");
-            System.out.println("Sender's details: " + account.getHolderName() + " " + account.getBalance());
-            System.out.println("Receiver's details: " + account.getHolderName() + " " + account.getBalance());
+            System.out.println("Sender's details: " + account.getHolderName() + ", " + account.getBalance());
+            System.out.println("Receiver's details: " + account.getHolderName() + ", " + account.getBalance());
             System.out.println("Transaction amount is: " + transaction.getAmount());
             balanceAfterTransaction = balanceAfterTransaction - (transaction.getAmount());
             System.out.println("Balance amount after debited: " + balanceAfterTransaction);
@@ -29,8 +29,8 @@ public class AccountAndTransactionService {
 
             System.out.println("Transaction ID: " + transaction.getTransactionId());
             System.out.println("Transaction type is credit");
-            System.out.println("Sender's details: " + account.getHolderName() + " " + account.getBalance());
-            System.out.println("Receiver's details: " + account.getHolderName() + " " + account.getBalance());
+            System.out.println("Sender's details: " + account.getHolderName() + ",  " + account.getBalance());
+            System.out.println("Receiver's details: " + account.getHolderName() + ",  " + account.getBalance());
             System.out.println("Transaction amount is: " + transaction.getAmount());
             balanceAfterTransaction = balanceAfterTransaction + transaction.getAmount();
             System.out.println("Balance amount after credited: " + balanceAfterTransaction);
@@ -41,11 +41,7 @@ public class AccountAndTransactionService {
 
     }
 
-    public void printTransactionDetails(){
 
-        System.out.println(calculateFinalBalance(account, transaction));
-
-    }
 }
 
 
