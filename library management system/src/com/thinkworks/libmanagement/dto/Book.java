@@ -23,7 +23,7 @@ public class Book {
         System.out.println("Book object created");
     }
 
-    public Book(int bookId, String title, String author, double price, int stock){
+    public Book(int bookId, String title, String author, double price, int stock, BookCategory category){
 
         this.bookId = bookId;
         this.title = title;
