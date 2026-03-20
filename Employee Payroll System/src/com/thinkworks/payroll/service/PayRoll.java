@@ -5,7 +5,7 @@ import com.thinkworks.payroll.dto.Employee;
 
 public class PayRoll {
 
-    static final String COMPANY_NAME = "TechCorp Pvt Ltd";
+    public static final String COMPANY_NAME = "TechCorp Pvt Ltd";
     private Department[] depts;
     private static double totalCompanySalary = 0;
 
@@ -52,6 +52,17 @@ public class PayRoll {
         else System.out.println("the value is null, please re enter the value");
 
         return totalCompanySalary;
+    }
+
+    public void findHighSalaryEmployees(Employee[] employees){
+         if (employees != null){
+             for (Employee employee: employees){
+                 if (employee.getSalary() >= 50000){
+                     System.out.println("high salary paid employees are: " + employee.getName());
+                 }
+             }
+         }
+         else System.out.println("the value is null");
     }
 
 
