@@ -7,6 +7,7 @@ public class Employee {
     private Designation designation;
     private double salary;
     private double bonus;
+    public static double annualSalary;
 
     public Employee(int empId, String name, Designation designation, double salary, double bonus) {
         this.empId = empId;
@@ -66,7 +67,7 @@ public class Employee {
 
     public double calculateAnnualSalary(){
 
-        double annualSalary;
+        annualSalary = 0;
         annualSalary = (salary + bonus) *12;
         return annualSalary;
     }
