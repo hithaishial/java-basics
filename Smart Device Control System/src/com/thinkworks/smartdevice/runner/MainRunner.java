@@ -2,6 +2,9 @@ package com.thinkworks.smartdevice.runner;
 import com.thinkworks.smartdevice.dto.SmartDevice;
 import com.thinkworks.smartdevice.service.DeviceService;
 
+import java.util.ArrayList;
+import java.util.Map;
+
 public class MainRunner {
 
     public static void main(String[] args) {
@@ -14,7 +17,12 @@ public class MainRunner {
         service.printControllerDetails(control);
         service.printSensorDetails(sense);
         service.runDeviceDiagnostics(device);
-    }
 
+
+
+
+
+
+    }
 
 }

@@ -31,6 +31,9 @@ public class BorrowRecord {
     }
 
     public Book[] getBooks() {
+        for(Book book: books){
+            System.out.println(book);
+        }
         return books;
     }
 
@@ -63,4 +66,6 @@ public class BorrowRecord {
         else System.out.println("Value is null, please re enter the value.");
     return totalPrice;
     }
+
+
 }

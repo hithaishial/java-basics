@@ -7,11 +7,11 @@ public class Room {
     private boolean isAvailable;
     private int numberOfNightStays;
 
-    public Room(int roomNumber, RoomTypeAndPrice roomTypeAndPrice, boolean isAvailable) {
+    public Room(int roomNumber, RoomTypeAndPrice roomTypeAndPrice, int numberOfNightStays, boolean isAvailable) {
         this.roomNumber = roomNumber;
         this.roomTypeAndPrice = roomTypeAndPrice;
         this.isAvailable = isAvailable;
-
+        this.numberOfNightStays = numberOfNightStays;
     }
 
     public int getRoomNumber() {
@@ -28,6 +28,14 @@ public class Room {
 
     public void setRoomTypeAndPrice(RoomTypeAndPrice roomTypeAndPrice) {
         this.roomTypeAndPrice = roomTypeAndPrice;
+    }
+
+    public int getNumberOfNightStays() {
+        return numberOfNightStays;
+    }
+
+    public void setNumberOfNightStays(int numberOfNightStays) {
+        this.numberOfNightStays = numberOfNightStays;
     }
 
     public boolean isAvailable() {

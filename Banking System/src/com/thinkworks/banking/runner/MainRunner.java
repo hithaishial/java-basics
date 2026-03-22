@@ -10,7 +10,7 @@ public class MainRunner {
     public static void main(String[] args) {
 
         Account acc = new Account(348243, "Yogitha", AccountType.SAVINGS_ACCOUNT);
-        Account acc1 = new Account(7865, "Yogitha", AccountType.CURRENT_ACCOUNT);
+        Account acc1 = new Account(7865, "Hithaishi", AccountType.CURRENT_ACCOUNT);
         Account acc2 = new Account(9867421, "Hithaishi", AccountType.FD_ACCOUNT);
 
         Transaction transaction = new Transaction(01, 500, "credit", acc, acc2);

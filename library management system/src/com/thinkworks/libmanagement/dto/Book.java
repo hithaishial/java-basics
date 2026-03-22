@@ -9,7 +9,8 @@ public class Book {
     private int stock;
 
     public enum BookCategory {
-        FICTION, NONFICTION, SCIENCE, HISTORY, TECHNOLOGY
+        FICTION, NONFICTION, SCIENCE, HISTORY, TECHNOLOGY;
+
     }
 
 

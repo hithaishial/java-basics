@@ -12,10 +12,12 @@ public class SmartDevice {
     }
 
     public String getDeviceId() {
+
         return deviceId;
     }
 
     public void setDeviceId(String deviceId) {
+
         this.deviceId = deviceId;
     }
 
@@ -24,6 +26,7 @@ public class SmartDevice {
     }
 
     public void setDeviceName(String deviceName) {
+
         this.deviceName = deviceName;
     }
 
@@ -61,6 +64,7 @@ public class SmartDevice {
         }
 
         public String getSensorType() {
+
             return sensorType;
         }
 

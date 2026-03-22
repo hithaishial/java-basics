@@ -28,7 +28,6 @@ public class LibraryService {
     public void printBorrowRecordDetails(BorrowRecord borrowRecord) {
 
         System.out.println("Member name: " + borrowRecord.getMember().getName());
-        System.out.println("List of books: " + borrowRecord.getBooks());
         System.out.println("Total borrow value: " + borrowRecord.getBorrowCount());
     }
 

@@ -23,11 +23,10 @@ public class Bookings {
 
     public void displayAvailableRoomList(Room[] rooms){
 
-        System.out.println("Showing availability list of rooms: ");
         if (rooms != null){
             for (Room room: rooms){
                 if (room.isAvailable()){
-                    System.out.println(room);
+                    System.out.println(room.getRoomTypeAndPrice());
                 }
             }
         }
@@ -38,7 +37,8 @@ public class Bookings {
         double totalPrice = 0;
         for (Room room: rooms){
 
-            totalPrice = totalPrice + (room.getRoomTypeAndPrice().getPrice()*room.);
+            totalPrice = totalPrice + (room.getRoomTypeAndPrice().getPrice()*room.getNumberOfNightStays());
         }
+        return totalPrice;
     }
 }

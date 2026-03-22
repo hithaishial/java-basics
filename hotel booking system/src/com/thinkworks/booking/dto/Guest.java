@@ -7,11 +7,10 @@ public class Guest {
     private String guestEmail;
     private Room[] rooms;
 
-    public Guest(String guestName, String guestPhoneNumber, String guestEmail, Room[] rooms) {
+    public Guest(String guestName, String guestPhoneNumber, String guestEmail) {
         this.guestName = guestName;
         this.guestPhoneNumber = guestPhoneNumber;
         this.guestEmail = guestEmail;
-        this.rooms = rooms;
     }
 
     public String getGuestName() {
