@@ -44,7 +44,5 @@ public class MainRunner {
         System.out.println("  ");
 
         System.out.println("Total price: " + bookings.calculateTotalPrice(rooms));
-
-
     }
 }

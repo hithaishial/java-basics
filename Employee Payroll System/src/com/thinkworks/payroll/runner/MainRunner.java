@@ -6,7 +6,6 @@ import com.thinkworks.payroll.dto.DepartmentType;
 import com.thinkworks.payroll.dto.Designation;
 import com.thinkworks.payroll.service.PayRoll;
 
-
 public class MainRunner {
 
     public static void main(String[] args) {
@@ -16,7 +15,6 @@ public class MainRunner {
         Employee e3 = new Employee(103, "Charlie", Designation.SENIOR_DEVELOPER, 6000, 1000);
         Employee e4 = new Employee(104, "Diana", Designation.MANAGER, 8000, 2000);
         Employee e5 = new Employee(105, "Edward", Designation.DIRECTOR, 12000, 3000);
-
 
         Department dept = new Department(1, "Development", DepartmentType.DEVELOPMENT,
                 new Employee[]{e2, e3, e4});
@@ -36,7 +34,6 @@ public class MainRunner {
         service.printEmployeeDetails(e4);
         service.printEmployeeDetails(e5);
 
-
         System.out.println(" Department Details");
         service.printDepartmentDetails(dept);
         service.printDepartmentDetails(dept1);
@@ -46,7 +43,6 @@ public class MainRunner {
         System.out.println(" Total Company Salary");
         System.out.println("Company: " + PayRoll.COMPANY_NAME);
         System.out.println("Total Salary: " + totalCompanySalary);
-
 
         System.out.println("High Salary Employees");
         service.findHighSalaryEmployees(new Employee[]{e1, e2, e3, e4, e5});
