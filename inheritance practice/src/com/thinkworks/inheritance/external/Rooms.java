@@ -4,7 +4,7 @@ import com.thinkworks.inheritance.internal.Hotel;
 
 public class Rooms extends Hotel {
 
-    Rooms(){
+    public Rooms(){
         System.out.println("created rooms class");
     }
 }
