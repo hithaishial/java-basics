@@ -4,5 +4,6 @@ public class Hotel {
 
    public Hotel(){
         System.out.println("created hotel class");
+       System.out.println("  ");
     }
 }
