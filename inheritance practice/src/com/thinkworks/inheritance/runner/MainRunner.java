@@ -10,6 +10,7 @@ public class MainRunner {
 
         Hotel hotel = new Hotel();
         Rooms rooms = new Rooms();
+        Hotel hotel1 = new Hotel();
     }
 
 

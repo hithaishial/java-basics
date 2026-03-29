@@ -6,5 +6,6 @@ public class Rooms extends Hotel {
 
     public Rooms(){
         System.out.println("created rooms class");
+        System.out.println(" ");
     }
 }
