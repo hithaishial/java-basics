@@ -1,5 +1,4 @@
 package com.thinkworks.inheritance.runner;
-
 import com.thinkworks.inheritance.external.Rooms;
 import com.thinkworks.inheritance.internal.Hotel;
 
@@ -11,7 +10,7 @@ public class MainRunner {
         Hotel hotel = new Hotel();
         Rooms rooms = new Rooms();
         Hotel hotel1 = new Hotel();
+        hotel.main();
     }
-
 
 }

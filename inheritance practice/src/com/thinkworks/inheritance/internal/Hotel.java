@@ -8,5 +8,10 @@ public class Hotel {
        {
            System.out.println("created static block");
        }
+   }
+
+    public static void main() {
+        System.out.println("main class is created");
     }
+
 }
