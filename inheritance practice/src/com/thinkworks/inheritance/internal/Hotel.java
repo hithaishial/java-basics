@@ -11,7 +11,8 @@ public class Hotel {
    }
 
     public static void main() {
-        System.out.println("main class is created");
+        System.out.println("  ");
+       System.out.println("main class is created");
     }
 
 }
