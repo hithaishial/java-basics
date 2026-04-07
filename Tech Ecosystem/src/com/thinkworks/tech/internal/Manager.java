@@ -9,7 +9,14 @@ public class Manager extends Entity {
         System.out.println("const of manager");
     }
 
-    public void manage(){
-        System.out.println("manager manages things");
+    public void manageTeam(Entity entity) {
+        if (entity != null){
+            if (entity instanceof Manager) {
+                Manager manager = (Manager) entity;
+                manager.displayInfo();
+            }
+        }
+        System.out.println(getName() + " is managing the team");
     }
+
 }

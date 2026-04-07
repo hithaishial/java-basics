@@ -9,7 +9,15 @@ public class DevOps extends Entity {
         System.out.println("const of devops");
     }
 
-    public void deployApplication(){
-        System.out.println(getName() + " deploys application");
+    public void deployPipeline(Entity entity) {
+        if (entity != null){
+            if (entity instanceof DevOps) {
+                DevOps devops = (DevOps) entity;
+                devops.displayInfo();
+            }
+        }
+        System.out.println(getName() + " is deploying application");
     }
+
+
 }

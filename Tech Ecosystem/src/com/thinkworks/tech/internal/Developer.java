@@ -9,14 +9,20 @@ public class Developer extends Entity {
         System.out.println("const of developer");
     }
 
-    public void writeCode(Entity entity) {
+    public void writeCode() {
 
-        if (entity instanceof Developer){
-
-            Developer developer = (Developer) entity;
-            developer.
-        }
-        System.out.println(getName() + " is writing code");
+        System.out.println("developer writes code");
     }
+       public void displaycode(Entity entity){
+
+           if (entity != null){
+               if (entity instanceof Developer) {
+
+                   Developer developer = (Developer) entity;
+                   developer.writeCode();
+               }
+           }
+           System.out.println(getName() + " is writing code");
+       }
 
 }

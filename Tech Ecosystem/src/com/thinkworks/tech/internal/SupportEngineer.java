@@ -10,9 +10,16 @@ public class SupportEngineer extends Entity {
         System.out.println("const of support engineer");
     }
 
-    public void resolveTickets() {
+    public void resolveTickets(Entity entity) {
+        if (entity != null){
+            if (entity instanceof SupportEngineer) {
+                SupportEngineer se = (SupportEngineer) entity;
+                se.displayInfo();
+            }
+        }
         System.out.println(getName() + " is resolving support tickets");
     }
+
 
 
 

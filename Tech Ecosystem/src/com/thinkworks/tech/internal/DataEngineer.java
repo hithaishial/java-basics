@@ -9,8 +9,16 @@ public class DataEngineer extends Entity {
         System.out.println("const of data engineer");
     }
 
-    public void buildPipeline() {
+    public void buildDataPipeline(Entity entity) {
+        if (entity != null){
+            if (entity instanceof DataEngineer) {
+                DataEngineer de = (DataEngineer) entity;
+                de.displayInfo();
+            }
+        }
         System.out.println(getName() + " is building data pipelines");
     }
 
 }
+
+

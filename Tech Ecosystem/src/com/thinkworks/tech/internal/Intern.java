@@ -9,8 +9,15 @@ public class Intern extends Entity {
         System.out.println("const of intern");
     }
 
-    public void learnSkills() {
+    public void learnSkills(Entity entity) {
+        if (entity != null){
+            if (entity instanceof Intern) {
+                Intern intern = (Intern) entity;
+                intern.displayInfo();
+            }
+        }
         System.out.println(getName() + " is learning new skills");
     }
+
 
 }

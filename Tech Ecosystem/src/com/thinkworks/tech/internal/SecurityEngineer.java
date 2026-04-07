@@ -10,8 +10,15 @@ public class SecurityEngineer extends Entity {
         System.out.println("const of security engineer");
     }
 
-    public void performAudit() {
-        System.out.println(getName() + " is performing a security audit");
+    public void performAudit(Entity entity) {
+        if (entity != null){
+            if (entity instanceof SecurityEngineer) {
+                SecurityEngineer se = (SecurityEngineer) entity;
+                se.displayInfo();
+            }
+        }
+        System.out.println(getName() + " is performing security audits");
     }
+
 
 }
