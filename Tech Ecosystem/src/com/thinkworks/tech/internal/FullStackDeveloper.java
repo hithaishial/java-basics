@@ -9,15 +9,26 @@ public class FullStackDeveloper extends Entity {
         System.out.println("const of fullstack developer");
     }
 
-    public void integrateSystems(Entity entity) {
-        if (entity != null){
-            if (entity instanceof FullStackDeveloper) {
-                FullStackDeveloper fsd = (FullStackDeveloper) entity;
-                fsd.displayInfo();
-            }
-        }
+    public void integrateSystems() {
+
         System.out.println(getName() + " is integrating frontend and backend");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in fullstack developer");
+    }
 
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in fullstack developer");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in fullstack developer");
+    }
 }

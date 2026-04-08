@@ -9,16 +9,28 @@ public class SystemAdmin extends Entity {
         System.out.println("const of system admin");
     }
 
-    public void maintainServers(Entity entity) {
-        if (entity != null){
-            if (entity instanceof SystemAdmin) {
-                SystemAdmin sa = (SystemAdmin) entity;
-                sa.displayInfo();
-            }
-        }
+    public void maintainServers() {
+
         System.out.println(getName() + " is maintaining servers");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in system admin");
+    }
+
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in system admin");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in system admin");
+    }
 }
 
 

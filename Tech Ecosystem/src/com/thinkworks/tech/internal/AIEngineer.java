@@ -10,13 +10,26 @@ public class AIEngineer extends Entity {
         System.out.println("const of ai engineer");
     }
 
-    public void trainModel(Entity entity) {
-        if (entity != null){
-            if (entity instanceof AIEngineer) {
-                AIEngineer ai = (AIEngineer) entity;
-                ai.displayInfo();
-            }
-        }
+    public void trainModel() {
+
         System.out.println(getName() + " is training AI models");
+    }
+
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in AI engineer");
+    }
+
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in AI engineer");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in AI engineer");
     }
 }

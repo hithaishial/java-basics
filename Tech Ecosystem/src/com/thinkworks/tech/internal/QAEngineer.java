@@ -9,16 +9,26 @@ public class QAEngineer extends Entity {
         System.out.println("const of QA tester");
     }
 
-    public void performQA(Entity entity) {
-        if (entity != null){
-            if (entity instanceof QAEngineer) {
-                QAEngineer qa = (QAEngineer) entity;
-                qa.displayInfo();
-            }
-        }
+    public void performQA() {
+
         System.out.println(getName() + " is performing quality assurance");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in QA engineer");
+    }
 
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in QA engineer");
+    }
 
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in QA engineer");
+    }
 }

@@ -9,14 +9,26 @@ public class AutomatonEngineer extends Entity {
         System.out.println("const of automation engineer");
     }
 
-    public void automateTests(Entity entity) {
-        if (entity != null){
-            if (entity instanceof AutomatonEngineer) {
-                AutomatonEngineer ae = (AutomatonEngineer) entity;
-                ae.displayInfo();
-            }
-        }
+    public void automateTests() {
+
         System.out.println(getName() + " is automating test cases");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in automation engineer");
+    }
+
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in automation engineer");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in automation engineer");
+    }
 }

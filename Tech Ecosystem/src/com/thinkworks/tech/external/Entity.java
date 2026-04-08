@@ -31,4 +31,17 @@ public class Entity {
         System.out.println("entity name: " + getName());
         System.out.println("entity type: " + getType());
     }
+
+    public void performRole() {
+        System.out.println("Entity performs a generic role.");
+    }
+
+    public void reportStatus() {
+        System.out.println("Entity reports a generic status.");
+    }
+
+    public void collaborate() {
+        System.out.println("Entity collaborates in a generic way.");
+    }
+
 }

@@ -10,15 +10,26 @@ public class SecurityEngineer extends Entity {
         System.out.println("const of security engineer");
     }
 
-    public void performAudit(Entity entity) {
-        if (entity != null){
-            if (entity instanceof SecurityEngineer) {
-                SecurityEngineer se = (SecurityEngineer) entity;
-                se.displayInfo();
-            }
-        }
+    public void performAudit() {
+
         System.out.println(getName() + " is performing security audits");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in security engineer");
+    }
 
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in security engineer");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in security engineer");
+    }
 }

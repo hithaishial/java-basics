@@ -9,15 +9,26 @@ public class MobileDeveloper extends Entity {
         System.out.println("const of mobile developer");
     }
 
-    public void buildApp(Entity entity) {
-        if (entity != null){
-            if (entity instanceof MobileDeveloper) {
-                MobileDeveloper md = (MobileDeveloper) entity;
-                md.displayInfo();
-            }
-        }
+    public void buildApp() {
+
         System.out.println(getName() + " is building mobile apps");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in mobile developer");
+    }
 
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in mobile developer");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in mobile developer");
+    }
 }

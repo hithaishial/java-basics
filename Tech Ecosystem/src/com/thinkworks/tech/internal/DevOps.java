@@ -9,15 +9,26 @@ public class DevOps extends Entity {
         System.out.println("const of devops");
     }
 
-    public void deployPipeline(Entity entity) {
-        if (entity != null){
-            if (entity instanceof DevOps) {
-                DevOps devops = (DevOps) entity;
-                devops.displayInfo();
-            }
-        }
+    public void deployPipeline() {
+
         System.out.println(getName() + " is deploying application");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in devops");
+    }
 
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in devops");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in devops");
+    }
 }

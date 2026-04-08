@@ -9,16 +9,28 @@ public class DataEngineer extends Entity {
         System.out.println("const of data engineer");
     }
 
-    public void buildDataPipeline(Entity entity) {
-        if (entity != null){
-            if (entity instanceof DataEngineer) {
-                DataEngineer de = (DataEngineer) entity;
-                de.displayInfo();
-            }
-        }
+    public void buildDataPipeline() {
+
         System.out.println(getName() + " is building data pipelines");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in data engineer");
+    }
+
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in data engineer");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in data engineer");
+    }
 }
 
 

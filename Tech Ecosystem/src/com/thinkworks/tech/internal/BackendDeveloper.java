@@ -9,15 +9,26 @@ public class BackendDeveloper extends Entity {
         System.out.println("const of backend developer");
     }
 
-    public void buildAPI(Entity entity) {
-        if (entity != null){
-            if (entity instanceof BackendDeveloper) {
-                BackendDeveloper bd = (BackendDeveloper) entity;
-                bd.displayInfo();
-            }
-        }
+    public void buildAPI() {
+
         System.out.println(getName() + " is building backend APIs");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in backend developer");
+    }
 
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in backend developer");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in backend developer");
+    }
 }

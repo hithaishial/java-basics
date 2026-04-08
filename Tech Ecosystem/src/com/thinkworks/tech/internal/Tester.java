@@ -9,14 +9,26 @@ public class Tester extends Entity {
         System.out.println("const of tester");
     }
 
-    public void testSoftware(Entity entity) {
-        if (entity != null){
-            if (entity instanceof Tester) {
-                Tester tester = (Tester) entity;
-                tester.displayInfo();
-            }
-        }
+    public void testSoftware() {
+
         System.out.println(getName() + " is testing software");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in tester");
+    }
+
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in tester");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in tester");
+    }
 }

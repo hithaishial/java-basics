@@ -9,15 +9,26 @@ public class Consultant extends Entity {
         System.out.println("const of consultant");
     }
 
-    public void adviseClients(Entity entity) {
-        if (entity != null){
-            if (entity instanceof Consultant) {
-                Consultant c = (Consultant) entity;
-                c.displayInfo();
-            }
-        }
+    public void adviseClients() {
+
         System.out.println(getName() + " is advising clients");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in consultant");
+    }
 
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in consultant");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in consultant");
+    }
 }

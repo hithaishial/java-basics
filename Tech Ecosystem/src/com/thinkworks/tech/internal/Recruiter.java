@@ -10,16 +10,28 @@ public class Recruiter extends Entity {
         System.out.println("const of recruiter");
     }
 
-    public void hireTalent(Entity entity) {
-        if (entity != null){
-            if (entity instanceof Recruiter) {
-                Recruiter r = (Recruiter) entity;
-                r.displayInfo();
-            }
-        }
+    public void hireTalent() {
+
         System.out.println(getName() + " is hiring new talent");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in recruiter");
+    }
+
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in recruiter");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in recruiter");
+    }
 }
 
 

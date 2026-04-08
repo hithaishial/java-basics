@@ -10,17 +10,26 @@ public class SupportEngineer extends Entity {
         System.out.println("const of support engineer");
     }
 
-    public void resolveTickets(Entity entity) {
-        if (entity != null){
-            if (entity instanceof SupportEngineer) {
-                SupportEngineer se = (SupportEngineer) entity;
-                se.displayInfo();
-            }
-        }
+    public void resolveTickets() {
+
         System.out.println(getName() + " is resolving support tickets");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in support engineer");
+    }
 
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in support engineer");
+    }
 
-
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in support engineer");
+    }
 }

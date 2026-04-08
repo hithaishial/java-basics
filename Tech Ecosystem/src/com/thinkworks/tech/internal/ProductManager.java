@@ -10,16 +10,28 @@ public class ProductManager extends Entity {
         System.out.println("const of product manager");
     }
 
-    public void defineRoadmap(Entity entity) {
-        if (entity != null){
-            if (entity instanceof ProductManager) {
-                ProductManager pm = (ProductManager) entity;
-                pm.displayInfo();
-            }
-        }
+    public void defineRoadmap() {
+
         System.out.println(getName() + " is defining product roadmap");
     }
 
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in product manager");
+    }
+
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in product manager");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in product manager");
+    }
 }
 
 

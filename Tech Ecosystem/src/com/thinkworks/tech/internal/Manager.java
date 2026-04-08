@@ -9,14 +9,26 @@ public class Manager extends Entity {
         System.out.println("const of manager");
     }
 
-    public void manageTeam(Entity entity) {
-        if (entity != null){
-            if (entity instanceof Manager) {
-                Manager manager = (Manager) entity;
-                manager.displayInfo();
-            }
-        }
+    public void manageTeam() {
         System.out.println(getName() + " is managing the team");
+    }
+
+    @Override
+    public void performRole() {
+        super.performRole();
+        System.out.println("running performRole in manager");
+    }
+
+    @Override
+    public void collaborate() {
+        super.collaborate();
+        System.out.println("running collaborate in manager");
+    }
+
+    @Override
+    public void reportStatus() {
+        super.reportStatus();
+        System.out.println("running reportStatus in manager");
     }
 
 }
