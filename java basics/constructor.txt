@@ -1,0 +1,26 @@
+constructor: special type of method which does not have any written type and its name is same as class name.
+             new is the keyword used to call a constructor.
+
+instance variable: declared inside a class but belongs to object.
+
+we cannot access instance variable from different class since it belongs to object.
+
+instantiation: creating an instance(copy of something)(object).
+
+new Magnet() - creates object, gives reference of that object.
+
+default value for any object is null.
+
+when a "new" keyword is used:
+-jvm makes memory known as instance space in heap.
+-invokes the constructor(object is created).
+-assigns/initialises default value to the instance variable.
+-the address(reference of the address) of the object is taken by jvm and is stored in reference.
+
+Default constructor: when no parameters and arguments are used in the constructor.
+
+when we have not created any constructor but we still invoke a constructor, there's no error while running because jvm creates a default constructor.
+
+String string = ""; This also creates an object, because the jvm already has string class and it creates and object. "" : Literal value.
+
+Before using any object we have to null check it.

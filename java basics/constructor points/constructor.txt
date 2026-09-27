@@ -1,0 +1,1 @@
+constructor: special type of method which does not have any written type and its name is same as class name.
