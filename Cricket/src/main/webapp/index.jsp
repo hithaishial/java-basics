@@ -1,5 +1,8 @@
 <html>
 <body>
-<h2>Hello World!</h2>
+<a Cricket Ticket Bookings</a>
+<h2>Welcome!</h2>
+<a href="ticketBookingForm.jsp"> Book Ticket</a>
+
 </body>
 </html>
