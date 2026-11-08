@@ -15,7 +15,7 @@ public class WebInit extends AbstractAnnotationConfigDispatcherServletInitialize
 
     @Override
     protected String[] getServletMappings() {
-        return new String[]{"/bookme"};
+        return new String[]{"/book"};
     }
 
     public WebInit() {
